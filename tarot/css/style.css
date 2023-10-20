@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 860px;
+    width: auto;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.piles {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pile-body {
+    background-color: rgba(225, 225, 225, 0.1);
+    margin: 100px 50px;
+    width: 30%;
+    border: 2px solid rgb(40, 40, 40);
+}
+
+.pile-body img {
+    width: 100%;
+}
+
+.pile-body h2 {
+    color: aliceblue;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: 'MyanmarFont';
+}
+
+.pile-body p {
+    padding: 20px 10px;
+    color: rgba(240, 248, 255, 0.7);
+}
+
+.pile-body a {
+    display: inline-block;
+    color: rgb(216, 164, 62);
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'roundFont';
+}
+
+.pile-body a:hover {
+    background-color: rgba(6, 6, 5, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 3px rgb(232, 194, 117);
+}
+
+@font-face {
+    font-family: 'MyanmarFont';
+    src: url(../font/Regular.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'roundFont';
+    src: url(../font/Beround-SemiBold.woff) format('woff');
+}

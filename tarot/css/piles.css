@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: inline-block;
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    color: rgba(225, 225, 225, .5);
+    font-size: 25px;
+    transition: .5s;
+    text-decoration: none;
+    right: -20px;
+    top: 30px;
+}
+
+.button:hover {
+    color: rgb(255, 248, 248);
+    transform: translateY(-2px);
+}
+
+.piles {
+    color: aliceblue;
+    display: flex;
+    margin: 20px 10px;
+}
+
+.heading {
+    margin: 50px 60px 0px 60px;
+    color: rgba(240, 248, 255, 0.7);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.paragraph {
+    margin: 20px 70px;
+    color: rgba(240, 248, 255, 0.7);
+    font-weight: bold;
+}
+
+.pile-body {
+    background-color: rgba(225, 225, 225, 0.1);
+    margin: 100px 20px;
+    width: 50%;
+    border: 2px solid rgb(40, 40, 40);
+}
+
+.pile-body img {
+    width: 100%;
+}
+
+.pile-body p {
+    padding: 20px 10px;
+    color: rgba(240, 248, 255, 0.7);
+}
+
+.pile-body a {
+    display: inline-block;
+    color: rgb(216, 164, 62);
+    margin: 20px 110px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'pile';
+    letter-spacing: 1.5px;
+}
+
+.pile-body a:hover {
+    background-color: rgba(6, 6, 5, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 3px rgb(232, 194, 117);
+}
+
+@font-face {
+    font-family: 'MyanmarFont';
+    src: url(../font/YAMIN-JA-001.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'pile';
+    src: url(../font/Karina.woff) format('woff2');
+}
